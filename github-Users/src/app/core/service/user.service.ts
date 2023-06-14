@@ -15,7 +15,7 @@ export class UserService {
 
   processInputValue(input: string) { 
     console.log(input);
-    this.apiUrl = `https://api.github.com/users/${input}`
+    this.apiUrl = `https://api.github.com/users/${input}/followers`
   }
 
   getUser():Observable<any>{
