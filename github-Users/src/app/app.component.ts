@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 export class AppComponent implements OnInit {
   title = 'github-Users';
   userArray!: any
-  inputValue!: string; 
+  inputValue!: string;
   constructor(private user: UserService) { }
 
   ngOnInit(): void {
@@ -19,10 +19,10 @@ export class AppComponent implements OnInit {
   submitForm() {
     this.user.processInputValue(this.inputValue);
     // get user followers
-     this.user.getUser().subscribe((response) => {
+    this.user.getUser().subscribe((response) => {
       this.userArray = []
       response.map((follower: any) => {
-         
+
         this.userArray.push(follower)
       })
       console.log(this.userArray)
@@ -33,6 +33,6 @@ export class AppComponent implements OnInit {
     //   this.userArray = []
     //   this.userArray.push(response)
     // })
-  } 
+  }
 
 }
