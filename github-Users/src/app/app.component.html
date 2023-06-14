@@ -1,3 +1,7 @@
+<form (ngSubmit)="submitForm()">
+  <input type="text" [(ngModel)]="inputValue" name="inputField">
+  <button type="submit">Submit</button>
+</form>
 <div *ngFor="let i of userArray">
   <img [src]="i.avatar_url" alt="">
   <p>{{i.blog}}</p>
