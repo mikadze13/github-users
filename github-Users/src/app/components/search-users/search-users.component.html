@@ -9,17 +9,22 @@
                 <img src="../../../assets/icons/icon-sun.svg" alt="">
             </div>
         </div>
+        <div class="app">
+            <div class="search-container">
 
-        <form (ngSubmit)="submitForm()">
-            <input type="text" [(ngModel)]="inputValue" name="inputField">
-            <button type="submit">Submit</button>
-        </form>
-        <div *ngFor="let i of userArray">
-            <img [src]="i.avatar_url" alt="">
-            <p>{{i.blog}}</p>
-            <p>followers:{{i.followers}}</p>
-            <p>{{i.followers_url}}</p>
-            <a [href]="i.followers_url">xoa</a>
+                <input type="text" [(ngModel)]="inputValue" name="inputField" id="input" placeholder="Search Github username...">
+                <button type="submit" (click)="submitForm()" class="btn-search">Search</button>
+
+            </div>
+            <div class="profile-container">
+                <div *ngFor="let i of userArray">
+                    <img [src]="i.avatar_url" alt="">
+                    <p>{{i.blog}}</p>
+                    <p>followers:{{i.followers}}</p>
+                    <p>{{i.followers_url}}</p>
+                    <a [href]="i.followers_url">xoa</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
