@@ -11,6 +11,29 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.light-mode{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.light-mode p {
+    letter-spacing: 2.5px;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 26px;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         width: 573px;

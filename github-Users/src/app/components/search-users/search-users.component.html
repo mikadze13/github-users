@@ -1,5 +1,15 @@
 <div class="main">
+
     <div class="container">
+
+        <div class="header">
+            <h1>devfinder</h1>
+            <div class="light-mode">
+                <p>LIGHT</p>
+                <img src="../../../assets/icons/icon-sun.svg" alt="">
+            </div>
+        </div>
+
         <form (ngSubmit)="submitForm()">
             <input type="text" [(ngModel)]="inputValue" name="inputField">
             <button type="submit">Submit</button>
