@@ -22,9 +22,21 @@
                     <div class="profile-header">
                         <img [src]="i.avatar_url" alt="avatar" id="avatar">
                         <div class="profile-info-wrapper">
-
+                            <div class="profile-name">
+                                <h2 class="name">{{i.name}}</h2>
+                                <p class="login-name">@{{i.login}}</p>
+                                <div class="bio">
+                                    <p *ngIf="i.bio === null">This profile has no bio</p>
+                                    <p *ngIf="i.bio !== null">{{i.bio}}</p>
+                                </div>
+                            </div>
+                            <p class="date">
+                                Joined {{i.created_at | date}}
+                            </p>
                         </div>
+
                     </div>
+
                 </div>
 
                 <!-- <div *ngFor="let i of userArray">

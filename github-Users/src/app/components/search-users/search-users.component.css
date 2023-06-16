@@ -66,9 +66,10 @@ h1 {
 }
 
 .profile-container {
-    width: 100%;
+    width: calc(100% - 81px);
     position: relative;
     background-color: #1e2a47;
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
 
@@ -77,9 +78,21 @@ h1 {
 .profile-content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    justify-content: space-evenly;
+    gap: 24px; 
+    justify-content: space-between;
 
+}
+
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.login-name {
+    color: #0079ff;
+    font-size: 16px;
+    font-weight: lighter !important;
 }
 
 .profile-header {
@@ -88,15 +101,19 @@ h1 {
     margin-bottom: 10px;
 }
 
-#avatar {
+#avatar { 
+    position: absolute;
     width: 70px;
     border-radius: 90px;
+    left: 0;
+    margin-left: 40px;
 }
 
 .profile-info-wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    width: 480px;
+    margin-left: auto;
 }
 
 #input {
@@ -154,7 +171,7 @@ h1 {
     }
 
     .profile-info-wrapper {
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
@@ -163,9 +180,7 @@ h1 {
         width: 730px;
     }
 
-    .profile-content {
-        width: 480px;
-        margin-left: auto;
+    .profile-content { 
         gap: 16px;
     }
 }

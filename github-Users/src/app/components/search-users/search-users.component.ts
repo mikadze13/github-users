@@ -12,14 +12,15 @@ export class SearchUsersComponent implements OnInit {
       avatar_url:"https://avatars.githubusercontent.com/u/583231?v=4",
       name:"The Octocat",
       created_at:"2011-01-25T18:44:36Z",
-      bio:"This profile has no bio",
+      bio:null,
       public_repos:8,
       followers:9515,
       following:9,
       location:"San Francisco",
       twitter_username:"Not available",
       blog:"https://github.blog",
-      company:"@github"
+      company:"@github",
+      login: "octocat"
     }
   ]
   inputValue!: string;
