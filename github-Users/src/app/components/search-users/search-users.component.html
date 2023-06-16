@@ -62,8 +62,8 @@
                         <div class="profile-info">
                             <div class="profile-bottom-icon">
                                 <img src="../../../assets/icons/icon-website.svg" alt="website">
-                                <p *ngIf="i.blog !== null">{{i.blog}}</p>
-                                <p *ngIf="i.blog === null">Not available</p>
+                                <p *ngIf="i.blog !== ''">{{i.blog}}</p>
+                                <p *ngIf="i.blog === ''">Not available</p>
                             </div>
                         </div>
                         <div class="profile-info">
