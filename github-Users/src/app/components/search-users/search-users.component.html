@@ -4,9 +4,13 @@
 
         <div class="header">
             <h1>devfinder</h1>
-            <div class="light-mode">
+            <div class="light-mode" *ngIf="mode">
                 <p>LIGHT</p>
-                <img src="../../../assets/icons/icon-sun.svg" alt="">
+                <img src="../../../assets/icons/icon-sun.svg" alt="light" (click)="lightMode()">
+            </div>
+            <div class="dark-mode" *ngIf="mode"> 
+                <p>DARK</p>
+                <img src="../../../assets/icons/icon-moon.svg" alt="dark" (click)="darkMode()">
             </div>
         </div>
         <div class="app">

@@ -23,6 +23,7 @@ export class SearchUsersComponent implements OnInit {
       login: "octocat"
     }
   ]
+  mode:boolean = true
   inputValue!: string;
   constructor(private user: UserService) { }
 
@@ -50,4 +51,14 @@ export class SearchUsersComponent implements OnInit {
       console.log(this.userArray)
     })
   }
+
+  // dark and light mode 
+  lightMode(){
+    this.mode = true    
+  }
+
+  darkMode(){
+    this.mode = false
+  }
+
 }
