@@ -25,10 +25,7 @@
                             <div class="profile-name">
                                 <h2 class="name">{{i.name}}</h2>
                                 <p class="login-name">@{{i.login}}</p>
-                                <div class="bio">
-                                    <p *ngIf="i.bio === null">This profile has no bio</p>
-                                    <p *ngIf="i.bio !== null">{{i.bio}}</p>
-                                </div>
+                                 
                             </div>
                             <p class="date">
                                 Joined {{i.created_at | date}}
@@ -36,7 +33,54 @@
                         </div>
 
                     </div>
-
+                    <div class="bio">
+                        <p *ngIf="i.bio === null">This profile has no bio</p>
+                        <p *ngIf="i.bio !== null">{{i.bio}}</p>
+                    </div>
+                    <div class="profile-statistic-wrapper">
+                        <div class="profile-statistic">
+                            <p  class="stat-title">Repos</p>
+                            <p>{{i.public_repos}}</p>
+                        </div>
+                        <div class="profile-statistic">
+                            <p class="stat-title">Followers</p>
+                            <p>{{i.followers}}</p>
+                        </div>
+                        <div class="profile-statistic">
+                            <p class="stat-title">Following</p>
+                            <p>{{i.following}}</p>
+                        </div>
+                    </div>
+                    <div class="profile-bottom-wrapper">
+                        <div class="profile-info">
+                            <div class="profile-bottom-icon">
+                                <img src="../../../assets/icons/icon-location.svg" alt="location">
+                                <p *ngIf="i.location !== null">{{i.location}}</p>
+                                <p *ngIf="i.location === null">Not available</p>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-bottom-icon">
+                                <img src="../../../assets/icons/icon-website.svg" alt="website">
+                                <p *ngIf="i.blog !== null">{{i.blog}}</p>
+                                <p *ngIf="i.blog === null">Not available</p>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-bottom-icon">
+                                <img src="../../../assets/icons/icon-twitter.svg" alt="twitter">
+                                <p *ngIf="i.twitter_username !== null">{{i.twitter_username}}</p>
+                                <p *ngIf="i.twitter_username === null">Not available</p>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-bottom-icon">
+                                <img src="../../../assets/icons/icon-company.svg" alt="company">
+                                <p *ngIf="i.company !== null">{{i.company}}</p>
+                                <p *ngIf="i.company === null">Not available</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- <div *ngFor="let i of userArray">

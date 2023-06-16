@@ -78,7 +78,9 @@ h1 {
 .profile-content {
     display: flex;
     flex-direction: column;
-    gap: 24px; 
+    width: 480px;
+    margin-left: auto;
+    gap: 24px;
     justify-content: space-between;
 
 }
@@ -95,13 +97,19 @@ h1 {
     font-weight: lighter !important;
 }
 
+.bio {
+    line-height: 25px;
+    opacity: 0.75;
+    font-weight: bolder;
+}
+
 .profile-header {
     display: flex;
     gap: 20px;
     margin-bottom: 10px;
 }
 
-#avatar { 
+#avatar {
     position: absolute;
     width: 70px;
     border-radius: 90px;
@@ -112,10 +120,42 @@ h1 {
 .profile-info-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 480px;
+    width: 100%;
     margin-left: auto;
 }
 
+.profile-statistic-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #141d2f;
+    text-align: center;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.profile-statistic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.profile-bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px 0;
+}
+
+.profile-info {
+    display: flex;
+    gap: 14px;
+}
+.profile-bottom-icon{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
 #input {
     border: none;
     width: 80%;
@@ -166,12 +206,34 @@ h1 {
         margin-bottom: 0;
     }
 
+    .bio {
+        font-size: 15px;
+    }
+
     #avatar {
         width: 117px;
     }
 
     .profile-info-wrapper {
         justify-content: space-between;
+    }
+
+    .profile-stats-wrapper {
+        padding: 18px 32px;
+    }
+
+    .profile-statistic {
+        text-align: start;
+    }
+
+    .profile-bottom-wrapper {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .profile-info {
+        width: 47.5%;
+        font-size: 15px;
     }
 }
 
@@ -180,7 +242,11 @@ h1 {
         width: 730px;
     }
 
-    .profile-content { 
+    .profile-content {
         gap: 16px;
+    }
+
+    .profile-stats-wrapper {
+        margin: 20px 0;
     }
 }
