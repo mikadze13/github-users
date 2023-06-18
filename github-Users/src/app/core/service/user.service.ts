@@ -10,11 +10,10 @@ export class UserService {
 
 
   public apiUrl = ``
-  private accessToken = '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'
+  public accessToken = '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'
   constructor(private http: HttpClient) { }
 
-  processInputValue(input: string) {
-    console.log(input);
+  processInputValue(input: string) { 
     this.apiUrl = `https://api.github.com/users/${input}`
   }
 
