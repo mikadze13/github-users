@@ -25,6 +25,12 @@ export class SearchUsersComponent implements OnInit {
   ]
   mode:boolean = true
   inputValue!: string;
+  light:boolean = false;
+  dark:boolean = true;
+  styleExp!:string
+  styleExpCont!:string
+  styleExpText!:string
+  applyPlaceholderColor:boolean = false
   constructor(private user: UserService) { }
 
 
@@ -54,11 +60,22 @@ export class SearchUsersComponent implements OnInit {
 
   // dark and light mode 
   lightMode(){
-    this.mode = true    
+    this.dark = true;
+    this.light = false;
+    document.body.style.background = 'white'
+    this.styleExp = "white"
+    this.styleExpCont = "white"
+    this.styleExpText = "#4b6a9b"
   }
 
   darkMode(){
-    this.mode = false
+    this.dark = false;
+    this.light = true;
+    document.body.style.background = '#141d2f'
+    this.styleExp = "#1e2a47" 
+    this.styleExpCont = "#141d2f"
+    this.applyPlaceholderColor = true
+    this.styleExpText = "white"
   }
 
 }
