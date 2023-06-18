@@ -10,7 +10,7 @@ export class UserService {
 
 
   public apiUrl = ``
-  private accessToken = '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'
+  private accessToken = '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'
   constructor(private http: HttpClient) { }
 
   processInputValue(input: string) { 
