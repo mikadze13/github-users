@@ -25,9 +25,8 @@ user.service.ts in private accessToken
 
 ![App Screenshot](/github-Users/src/assets/images/app-screenshot.png)
 
-## Links
-- Live site URL - [Live site](https://academy-final-project.vercel.app)
-- Solution URL - [Solution URL](https://github.com/mikadze13/academy-final-project)
+## Links 
+- Solution URL - [Solution URL](https://github.com/mikadze13/github-users/tree/main)
 
 ## Built With
 - HMTL
