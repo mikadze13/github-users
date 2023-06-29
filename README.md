@@ -18,12 +18,12 @@ Install my-project with npm
 ## Usage
 
 Because the private access token used in the project, you need to generate 
-a token from ![here(click)](https://github.com/settings/tokens) and put 
+a token from [here(click)](https://github.com/settings/tokens) and put 
 user.service.ts in private accessToken
 
 ## Screenshots
 
-![App Screenshot](/src/assets/images/final-screenshot.png)
+![App Screenshot](/github-Users/src/assets/images/app-screenshot.png)
 
 ## Links
 - Live site URL - [Live site](https://academy-final-project.vercel.app)
